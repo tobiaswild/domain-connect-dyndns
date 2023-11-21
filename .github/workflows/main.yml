@@ -40,8 +40,8 @@ jobs:
         with:
           images: |
             tobiaswild/domain-connect-dyndns
+          flavor: latest=true
           tags: |
-            type=schedule
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
